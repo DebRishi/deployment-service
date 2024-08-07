@@ -1,0 +1,4 @@
+How to create a docker image for build-server on an ARM based machine ?
+=> docker buildx build --platform linux/amd64 -t build-server .
+
+docker run -e GIT_REPO_URL=https://github.com/DebRishi/test-vite-project.git -e PROJECT_ID=test-project build-server
